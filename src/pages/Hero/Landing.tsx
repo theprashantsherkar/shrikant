@@ -1,5 +1,6 @@
 import Portfolio from "@/components/custom/portfolio/Portfolio";
 import { Squares } from "@/components/ui/squares-background";
+import About from "./About";
 
 export default function Landing() {
     return (
@@ -13,8 +14,12 @@ export default function Landing() {
                     hoverFillColor="#222"
                     className="absolute"
                 />
-                <div className="relative text-white top-1/4 px-6">
-                    <Portfolio/> </div>
+                <div className="relative text-white top-1/4 px-6 flex flex-col items-start justify-center ">
+                    <Portfolio />
+                    <div className="flex items-center justify-center w-1/2">
+                        <About />
+                    </div>
+                </div>
             </div>
         </div>
     )
