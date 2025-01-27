@@ -15,3 +15,9 @@ jobs:
               uses: actions/setup-node@v4
               with: 
                 node-version: '21'
+
+            - name: "Checkout Node Version"
+              run: node --version  
+
+            - name: "Clone the repository"
+              uses: actions/checkout@v2  
